@@ -1,12 +1,11 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Apr 13 2017)
+// C++ code generated with wxFormBuilder (version 3.10.1-367-gf0e67a69)
 // http://www.wxformbuilder.org/
 //
-// PLEASE DO "NOT" EDIT THIS FILE!
+// PLEASE DO *NOT* EDIT THIS FILE!
 ///////////////////////////////////////////////////////////////////////////
 
-#ifndef __BOSSAFORM_H__
-#define __BOSSAFORM_H__
+#pragma once
 
 #include <wx/artprov.h>
 #include <wx/xrc/xmlres.h>
@@ -40,10 +39,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 /// Class MainFrame
 ///////////////////////////////////////////////////////////////////////////////
-class MainFrame : public wxFrame 
+class MainFrame : public wxFrame
 {
 	private:
-	
+
 	protected:
 		wxStaticBitmap* _bossaBitmap;
 		wxStaticText* _titleText;
@@ -67,42 +66,43 @@ class MainFrame : public wxFrame
 		wxButton* _infoButton;
 		wxButton* _exitButton;
 		wxStatusBar* _statusBar;
-	
+
 	public:
-		
+
 		MainFrame( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("BOSSA"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 550,400 ), long style = wxCAPTION|wxCLOSE_BOX|wxICONIZE|wxMINIMIZE|wxMINIMIZE_BOX|wxSYSTEM_MENU|wxTAB_TRAVERSAL );
-		
+
 		~MainFrame();
-	
+
 };
 
 ///////////////////////////////////////////////////////////////////////////////
 /// Class ProgressDialog
 ///////////////////////////////////////////////////////////////////////////////
-class ProgressDialog : public wxDialog 
+class ProgressDialog : public wxDialog
 {
 	private:
-	
+
 	protected:
 		wxStaticText* _infoStaticText;
 		wxGauge* _statusGauge;
 		wxStdDialogButtonSizer* _sdbSizer;
 		wxButton* _sdbSizerCancel;
-	
+
 	public:
-		
-		ProgressDialog( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Progress"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 300,150 ), long style = wxCAPTION ); 
+
+		ProgressDialog( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Progress"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 300,150 ), long style = wxCAPTION );
+
 		~ProgressDialog();
-	
+
 };
 
 ///////////////////////////////////////////////////////////////////////////////
 /// Class AboutDialog
 ///////////////////////////////////////////////////////////////////////////////
-class AboutDialog : public wxDialog 
+class AboutDialog : public wxDialog
 {
 	private:
-	
+
 	protected:
 		wxStaticBitmap* _bossaBitmap;
 		wxStaticText* _titleStaticText;
@@ -117,21 +117,22 @@ class AboutDialog : public wxDialog
 		wxStaticLine* m_staticline3;
 		wxStdDialogButtonSizer* _sdbSizer;
 		wxButton* _sdbSizerOK;
-	
+
 	public:
-		
-		AboutDialog( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("About BOSSA"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 300,-1 ), long style = wxDEFAULT_DIALOG_STYLE ); 
+
+		AboutDialog( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("About BOSSA"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 300,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+
 		~AboutDialog();
-	
+
 };
 
 ///////////////////////////////////////////////////////////////////////////////
 /// Class InfoDialog
 ///////////////////////////////////////////////////////////////////////////////
-class InfoDialog : public wxDialog 
+class InfoDialog : public wxDialog
 {
 	private:
-	
+
 	protected:
 		wxStaticText* _deviceStaticText;
 		wxTextCtrl* _deviceTextCtrl;
@@ -153,12 +154,12 @@ class InfoDialog : public wxDialog
 		wxTextCtrl* _lockTextCtrl;
 		wxStdDialogButtonSizer* _sdbSizer;
 		wxButton* _sdbSizerOK;
-	
+
 	public:
-		
-		InfoDialog( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Info"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE ); 
+
+		InfoDialog( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Info"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE );
+
 		~InfoDialog();
-	
+
 };
 
-#endif //__BOSSAFORM_H__
